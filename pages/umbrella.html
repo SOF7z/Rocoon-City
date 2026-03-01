@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Investigasi mendalam Umbrella Corporation — korporasi farmasi yang bertanggung jawab atas bencana biologis Raccoon City 1998." />
+  <title>Umbrella Corporation — Raccoon City Archive</title>
+  <link rel="icon" type="image/png" href="../images/logo-sof7z.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;500;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .umbrella-logo-section {
+      text-align: center; padding: 5rem 2rem;
+      background: var(--dark-2);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .umbrella-emblem {
+      font-size: 8rem; display: block;
+      margin-bottom: 1rem;
+      filter: drop-shadow(0 0 30px rgba(192,57,43,0.6));
+      animation: pulse 3s ease-in-out infinite;
+    }
+    .umbrella-motto {
+      font-family: var(--font-title); font-size: 1.2rem;
+      letter-spacing: 0.5em; color: var(--text-muted); text-transform: uppercase;
+    }
+    .exec-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; }
+    .exec-card {
+      background: var(--dark-card); border: 1px solid var(--border-subtle);
+      padding: 1.8rem; transition: var(--transition);
+    }
+    .exec-card:hover { border-color: var(--border); transform: translateY(-3px); }
+    .exec-role { font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--red-glow); margin-bottom: 0.3rem; display: block; }
+    .exec-name { font-family: var(--font-title); font-size: 1.3rem; color: #fff; margin-bottom: 0.5rem; }
+    .exec-status { font-size: 0.72rem; margin-bottom: 0.8rem; display: block; letter-spacing: 0.05em; }
+    .exec-card p { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6; }
+    .project-list { list-style: none; }
+    .project-list li {
+      padding: 1.2rem 0; border-bottom: 1px solid var(--border-subtle);
+      display: flex; gap: 1rem; align-items: flex-start;
+    }
+    .project-list li:last-child { border-bottom: none; }
+    .project-code { font-family: monospace; font-size: 0.78rem; color: var(--red-glow); min-width: 100px; font-weight: 700; padding-top: 2px; }
+    .project-title { font-weight: 700; color: #fff; margin-bottom: 0.3rem; font-size: 0.95rem; }
+    .project-desc { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5; }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      <span class="logo-symbol">☣</span>
+      <span class="logo-text">RACCOON CITY</span>
+    </div>
+    <div class="nav-toggle" id="navToggle">
+      <span></span><span></span><span></span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">Beranda</a></li>
+      <li><a href="sejarah.html">Sejarah</a></li>
+      <li><a href="wabah.html">Wabah</a></li>
+      <li><a href="korban.html">Korban & Penyelamat</a></li>
+      <li><a href="umbrella.html" class="active">Umbrella Corp</a></li>
+    </ul>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <div class="page-header-bg" style="background-image: url('../images/umbrella.png')"></div>
+    <div class="page-header-overlay"></div>
+    <div class="page-header-content">
+      <span class="page-header-tag">INVESTIGASI KORPORASI · ARSIP TERKLASIFIKASI</span>
+      <h1>UMBRELLA CORP</h1>
+      <p>Perusahaan yang menjual obat kepada dunia sambil menciptakan senjata di kegelapan.</p>
+    </div>
+  </div>
+
+  <!-- UMBRELLA LOGO SECTION -->
+  <div class="umbrella-logo-section">
+    <span class="umbrella-emblem">☂</span>
+    <div class="umbrella-motto">Obedience Breeds Discipline · Discipline Breeds Unity · Unity Breeds Power · Power is Life</div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <section class="section">
+    <div class="container">
+      <div class="prose">
+        <div class="callout" style="border-color:#e67e22;background:rgba(230,126,34,0.08)">
+          <strong style="color:#e67e22">⚠ STATUS HUKUM:</strong> Umbrella Corporation secara resmi dibubarkan oleh pengadilan internasional pada 2004 setelah serangkaian gugatan yang berasal dari bukti-bukti yang berhasil diselamatkan oleh para penyintas Raccoon City. Namun jaringan afiliasi dan anak perusahaannya masih beroperasi di negara-negara dengan pengawasan hukum lemah.
+        </div>
+
+        <h2>Profil Korporasi</h2>
+        <p>
+          Umbrella Corporation — nama resmi: <em>Umbrella Pharmaceuticals, Inc.</em> — didirikan pada tahun 1968 oleh tiga tokoh utama: <strong>Oswell E. Spencer</strong>, <strong>Edward Ashford</strong>, dan <strong>James Marcus</strong>. Berkantor pusat di Eropa, dengan markas operasional Amerika di kota Raccoon City, Umbrella menampilkan dirinya kepada publik sebagai raksasa farmasi yang bertanggung jawab atas penemuan beberapa obat-obatan penting abad ke-20.
+        </p>
+        <p>
+          Kenyataannya jauh berbeda. Umbrella Corporation adalah selubung untuk program penelitian senjata biologis yang paling ambisius dan paling berbahaya dalam sejarah modern. Semua keuntungan dari lini farmasi mereka yang sah — yang mencapai miliaran dolar per tahun — digunakan untuk membiayai eksperimen rahasia yang dilakukan di fasilitas-fasilitas yang tersembunyi di bawah tanah.
+        </p>
+
+        <img src="../images/umbrella.png" alt="Gedung Umbrella Corporation" />
+        <span class="img-caption">↑ Kantor pusat Umbrella Corporation — fasad modern yang menyembunyikan operasi yang paling gelap dalam sejarah korporasi.</span>
+
+        <h2>Pendiri & Tokoh Kunci</h2>
+      </div>
+
+      <div class="exec-grid" style="margin:2rem 0">
+        <div class="exec-card" data-aos="fade-up">
+          <span class="exec-role">Pendiri & CEO</span>
+          <div class="exec-name">Oswell E. Spencer</div>
+          <span class="exec-status" style="color:#e74c3c">✕ Tewas 2006</span>
+          <p>Visioner di balik Umbrella. Percaya bahwa umat manusia perlu "direvolusi" dengan virus untuk menciptakan ras superior. Seluruh program T-Virus lahir dari ambisi megalomaniak-nya.</p>
+        </div>
+        <div class="exec-card" data-aos="fade-up" data-aos-delay="100">
+          <span class="exec-role">Pendiri & Ilmuwan Utama</span>
+          <div class="exec-name">Dr. James Marcus</div>
+          <span class="exec-status" style="color:#e74c3c">✕ Tewas 1988 (Dibunuh oleh Spencer)</span>
+          <p>Bapak T-Virus yang sesungguhnya. Marcus mengembangkan Progenitor Virus menjadi T-Virus sebelum dibunuh oleh rekannya sendiri untuk menghilangkan jejak. Ia "bereinkarnasi" tahun 1998 dengan cara yang tidak terduga.</p>
+        </div>
+        <div class="exec-card" data-aos="fade-up" data-aos-delay="200">
+          <span class="exec-role">Kepala Divisi Virologi</span>
+          <div class="exec-name">Dr. William Birkin</div>
+          <span class="exec-status" style="color:#e74c3c">✕ Tewas 1998 (Mutasi G-Virus)</span>
+          <p>Jenius yang mengembangkan G-Virus. Ketika Umbrella mencuri karyanya, ia menyuntik dirinya sendiri dengan G-Virus dalam keputusasaan. Metamorfosanya menjadi salah satu ancaman terbesar yang dihadapi penyintas Raccoon City.</p>
+        </div>
+        <div class="exec-card" data-aos="fade-up" data-aos-delay="300">
+          <span class="exec-role">Direktur Operasional</span>
+          <div class="exec-name">Albert Wesker</div>
+          <span class="exec-status" style="color:#e67e22">⚠ Status: TEWAS (2009)</span>
+          <p>Agen ganda yang bekerja untuk Umbrella sambil menyabotase mereka dari dalam. Memanfaatkan kekacauan Raccoon City untuk kepentingan pribadinya. Menjadi ancaman global selama satu dekade setelah kejatuhan Umbrella.</p>
+        </div>
+      </div>
+
+      <div class="prose">
+        <h2>Program Penelitian Rahasia</h2>
+        <ul class="project-list">
+          <li>
+            <span class="project-code">PROYEK T</span>
+            <div>
+              <div class="project-title">T-Virus (Tyrant Virus)</div>
+              <div class="project-desc">Senjata biologis utama. Mengubah organisme hidup menjadi makhluk agresif dengan mendegradasi fungsi otak korteks. Dikembangkan dari Progenitor Virus by Dr. Marcus, diselesaikan oleh Birkin. Bocor di Raccoon City pada September 1998.</div>
+            </div>
+          </li>
+          <li>
+            <span class="project-code">PROYEK G</span>
+            <div>
+              <div class="project-title">G-Virus (Golgotha Virus)</div>
+              <div class="project-desc">Versi yang lebih kompleks dari T-Virus, dikembangkan secara rahasia oleh Dr. William Birkin. Memungkinkan mutasi regeneratif ekstrem dan transfer genetik antar spesies. Ambisi pribadi Birkin yang berakhir dengan tragedi.</div>
+            </div>
+          </li>
+          <li>
+            <span class="project-code">PROYEK NEMESIS</span>
+            <div>
+              <div class="project-title">Nemesis-T Type Bio-Weapon</div>
+              <div class="project-desc">Senjata biologis humanoid dengan kecerdasan terbatas namun kemampuan pertempuran luar biasa. Dikembangkan untuk memburu dan melenyapkan anggota S.T.A.R.S. yang mengetahui rahasia Umbrella. Dikerahkan di Raccoon City pada September 1998.</div>
+            </div>
+          </li>
+          <li>
+            <span class="project-code">PROYEK TYRANT</span>
+            <div>
+              <div class="project-title">Tyrant / T-002 Series</div>
+              <div class="project-desc">Serangkaian super-soldier biologis yang direkayasa dari sel embrio manusia yang telah dimodifikasi T-Virus. Dimaksudkan sebagai "senjata sempurna" untuk operasi militer rahasia. Sebagian besar tahap uji coba gagal.</div>
+            </div>
+          </li>
+        </ul>
+
+        <h2>Kejatuhan Umbrella</h2>
+        <p>
+          Ironisnya, bencana Raccoon City — yang seharusnya menjadi puncak demonstrasi kemampuan Umbrella kepada calon klien militer mereka — justru menjadi awal kejatuhan korporasi itu. Terlalu banyak eyewitness, terlalu banyak penyintas, dan terlalu banyak bukti digital yang berhasil diselamatkan sebelum kota dihancurkan.
+        </p>
+        <p>
+          Selama enam tahun setelah insiden, Umbrella berjuang di pengadilan internasional melawan gugatan yang terus bertambah. Saham mereka runtuh ketika rekaman internal — yang membuktikan keterlibatan langsung eksekutif puncak dalam pengembangan senjata biologis — bocor ke media pada 2003.
+        </p>
+        <p>
+          Pada 2004, pengadilan internasional secara resmi membubarkan Umbrella Corporation dan menyegel seluruh aset mereka. Namun teknologi mereka — dan orang-orang yang menyimpannya — tidak bisa dibubarkan semudah kertas pengadilan.
+        </p>
+
+        <div class="callout">
+          "Umbrella tidak pernah benar-benar mati. Mereka hanya berganti nama, berganti wajah, dan pindah ke tempat yang lebih gelap. Selama ada kekuasaan dan uang yang menginginkan senjata biologis, warisan Umbrella akan terus hidup." <br><br>— Leon S. Kennedy, Laporan Kepada Interpol, 2005
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo"><span class="logo-symbol">☣</span><span class="logo-text">RACCOON CITY ARCHIVE</span></div>
+          <p>Arsip digital tidak resmi yang didedikasikan untuk mengungkap kebenaran di balik bencana Raccoon City tahun 1998.</p>
+          <p class="footer-disclaimer">⚠ Semua konten ini bersifat fiksi berdasarkan dunia Resident Evil oleh Capcom.</p>
+        </div>
+        <div class="footer-nav">
+          <h4>Navigasi</h4>
+          <ul>
+            <li><a href="../index.html">Beranda</a></li>
+            <li><a href="sejarah.html">Sejarah Kota</a></li>
+            <li><a href="wabah.html">Kronologi Wabah</a></li>
+            <li><a href="korban.html">Korban & Penyelamat</a></li>
+            <li><a href="umbrella.html">Umbrella Corporation</a></li>
+          </ul>
+        </div>
+        <div class="footer-info">
+          <h4>Informasi</h4>
+          <ul>
+            <li>Lokasi: Midwest, Amerika Serikat</li>
+            <li>Populasi (1997): 100.000 jiwa</li>
+            <li>Status: DIHANCURKAN</li>
+            <li>Tanggal: 1 Oktober 1998</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 1998–2024 Raccoon City Archive Project · Fan Site · Berdasarkan dunia fiksi Resident Evil oleh Capcom</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
